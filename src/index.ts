@@ -6,7 +6,7 @@ import exit from './exit'
 import hook from './hook'
 import {loadConfig} from './load-config'
 
-loadConfig.root = module.parent!.filename
+loadConfig.root = require.main.filename
 
 export const test = fancy
 .register('loadConfig', loadConfig)
